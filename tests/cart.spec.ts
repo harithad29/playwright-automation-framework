@@ -20,7 +20,7 @@ test.describe("Cart functionality", () => {
 
     await inventoryPage.addBackpackToCart();
 
-    await expect(page.locator(".shopping_cart_badge")).toHaveText("1");
+    await expect(page.locator(".shopping_cart_badge")).toHaveText("2");
 
     await inventoryPage.openCart();
     await cartPage.verifyProduct(productData.backpack);
